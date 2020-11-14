@@ -1,0 +1,22 @@
+{
+    "name":"milena",
+    "version":"0.1.0",
+    "description":"TypeScript CLI-Tools",
+    "main":"index.js",
+    "scripts":{},
+    "keywords":[
+        "cli",
+        "terminal",
+        "prompt",
+        "shell",
+        "ansi",
+        "console",
+        "typescript"
+    ],
+    "author":"Leo Battaglia",
+    "license":"ISC",
+    "devDependencies":{
+        "@types/node":"^14.14.7",
+        "typescript":"^4.0.5"
+    }
+}
