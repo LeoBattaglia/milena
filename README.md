@@ -6,7 +6,7 @@ Run `npm i milena`
 
 ## Import
 ```
-import {Prompt} from "powerprompt";
+import {Prompt} from "milena";
 const pp = new Prompt();
 --> Example: pp.printLine();
 ```
