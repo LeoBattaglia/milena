@@ -6,8 +6,8 @@ Run `npm i milena`
 
 ## Import
 ```
-import {Prompt} from "milena";
-const pp = new Prompt();
+const milena = require("milena");
+const pp = new milena.Prompt();
 --> Example: pp.printLine();
 ```
 

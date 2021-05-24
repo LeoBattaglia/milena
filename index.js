@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PowerPrompt = void 0;
+exports.Prompt = void 0;
 const ansi = require("./lib/ansi");
 const config = require("./lib/config.json");
 const func = require("./lib/functions");
 const readline = require("readline");
 readline.emitKeypressEvents(process.stdin);
 const stdin = process.stdin;
-class PowerPrompt {
+class Prompt {
     constructor() { }
     close(exitProcess) {
         func.closeStdin();
@@ -187,5 +187,5 @@ class PowerPrompt {
         return result;
     }
 }
-exports.PowerPrompt = PowerPrompt;
+exports.Prompt = Prompt;
 //# sourceMappingURL=index.js.map
