@@ -99,7 +99,7 @@ pp.printInput("Input-Text");
 Print a line to stdout in line-color (white).
 Line-width is defined in /lib/config.json
 #### Parameters:
-- output:string|number|boolean
+- NONE
 #### Use:
 ```
 pp.printLine();
