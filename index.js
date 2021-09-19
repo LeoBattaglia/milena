@@ -8,7 +8,11 @@ const readline = require("readline");
 readline.emitKeypressEvents(process.stdin);
 const stdin = process.stdin;
 class Prompt {
-    constructor() { }
+    constructor() {
+    }
+    clear() {
+        console.clear();
+    }
     close(exitProcess) {
         func.closeStdin();
         if (exitProcess) {

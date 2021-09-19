@@ -1,13 +1,18 @@
-const ansi          = require("./lib/ansi");
-const config        = require("./lib/config.json");
-const func          = require("./lib/functions");
-const readline        = require("readline");
+const ansi = require("./lib/ansi");
+const config = require("./lib/config.json");
+const func = require("./lib/functions");
+const readline = require("readline");
 
 readline.emitKeypressEvents(process.stdin);
 const stdin = process.stdin;
 
 export class Prompt{
-    constructor(){}
+    constructor(){
+    }
+
+    clear(){
+        console.clear();
+    }
 
     close(exitProcess:boolean){
         func.closeStdin();
@@ -97,7 +102,7 @@ export class Prompt{
                         ansi.right(options[0].length);
                         ansi.log("\n");
                         let result:string[] = [];
-                        for(let i:number=0; i<options.length; i++){
+                        for(let i:number = 0; i < options.length; i++){
                             if(selected[i]){
                                 result.push(options[i]);
                             }
