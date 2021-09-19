@@ -25,7 +25,6 @@ export class Prompt{
         stdin.setRawMode(true);
         let inputStream = new Promise((resolve) => {
             stdin.on("keypress", (str, key) => {
-                console.log("DDD: " + key.name);
                 let input:string = key.name.toString();
                 input = func.removeTabsAndBreaks(input);
                 if(abortOnWrongChar){
