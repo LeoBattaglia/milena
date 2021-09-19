@@ -132,6 +132,38 @@ export class Prompt{
         func.print(output);
     }
 
+    printColorBlack(output):void{
+        func.log(output, config.colors.black, true);
+    }
+
+    printColorBlue(output):void{
+        func.log(output, config.colors.blue, true);
+    }
+
+    printColorCyan(output):void{
+        func.log(output, config.colors.cyan, true);
+    }
+
+    printColorGreen(output):void{
+        func.log(output, config.colors.green, true);
+    }
+
+    printColorMagenta(output):void{
+        func.log(output, config.colors.magenta, true);
+    }
+
+    printColorRed(output):void{
+        func.log(output, config.colors.red, true);
+    }
+
+    printColorWhite(output):void{
+        func.log(output, config.colors.white, true);
+    }
+
+    printColorYellow(output):void{
+        func.log(output, config.colors.yellow, true);
+    }
+
     printCommand(output):void{
         func.printCommand(output);
     }

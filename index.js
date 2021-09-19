@@ -129,6 +129,30 @@ class Prompt {
     print(output) {
         func.print(output);
     }
+    printColorBlack(output) {
+        func.log(output, config.colors.black, true);
+    }
+    printColorBlue(output) {
+        func.log(output, config.colors.blue, true);
+    }
+    printColorCyan(output) {
+        func.log(output, config.colors.cyan, true);
+    }
+    printColorGreen(output) {
+        func.log(output, config.colors.green, true);
+    }
+    printColorMagenta(output) {
+        func.log(output, config.colors.magenta, true);
+    }
+    printColorRed(output) {
+        func.log(output, config.colors.red, true);
+    }
+    printColorWhite(output) {
+        func.log(output, config.colors.white, true);
+    }
+    printColorYellow(output) {
+        func.log(output, config.colors.yellow, true);
+    }
     printCommand(output) {
         func.printCommand(output);
     }

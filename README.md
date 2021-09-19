@@ -68,6 +68,78 @@ Print output to stdout in default-color (white).
 pp.print("Default-Text");
 ```
 
+### printColorBlack()
+Print output to stdout in black color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorBlack("Default-Text");
+```
+
+### printColorBlue()
+Print output to stdout in blue color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorBlue("Default-Text");
+```
+
+### printColorCyan()
+Print output to stdout in cyan color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorCyan("Default-Text");
+```
+
+### printColorGreen()
+Print output to stdout in green color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorGreen("Default-Text");
+```
+
+### printColorMagenta()
+Print output to stdout in magenta color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorMagenta("Default-Text");
+```
+
+### printColorRed()
+Print output to stdout in red color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorRed("Default-Text");
+```
+
+### printColorWhite()
+Print output to stdout in white color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorWhite("Default-Text");
+```
+
+### printColorYellow()
+Print output to stdout in yellow color.
+#### Parameters:
+- output:string|number|boolean
+#### Use:
+```
+pp.printColorYellow("Default-Text");
+```
+
 ### printCommand()
 Print output to stdout in command-color (green).
 #### Parameters:
