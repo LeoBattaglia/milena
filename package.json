@@ -1,6 +1,6 @@
 {
     "name":"milena",
-    "version":"0.1.7",
+    "version":"0.1.8",
     "description":"TypeScript CLI-Tools",
     "main":"index.js",
     "scripts":{},

@@ -30,14 +30,18 @@ export class Prompt{
         stdin.setRawMode(true);
         let inputStream = new Promise((resolve) => {
             stdin.on("keypress", (str, key) => {
-                let input:string = key.name.toString();
-                input = func.removeTabsAndBreaks(input);
-                if(abortOnWrongChar){
-                    resolve(func.getChoose(input, charTrue, charFalse));
-                }else{
-                    if(func.getChoose(input, charTrue, charFalse) !== undefined){
+                try{
+                    let input:string = key.name.toString();
+                    input = func.removeTabsAndBreaks(input);
+                    if(abortOnWrongChar){
                         resolve(func.getChoose(input, charTrue, charFalse));
+                    }else{
+                        if(func.getChoose(input, charTrue, charFalse) !== undefined){
+                            resolve(func.getChoose(input, charTrue, charFalse));
+                        }
                     }
+                }catch(e){
+                    resolve(undefined);
                 }
             });
         });
