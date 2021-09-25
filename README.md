@@ -225,3 +225,20 @@ It is also possible, to use the methods without "await" for asynchronous and non
 
 ## Parameters
 None
+
+# Export-Methods
+
+### getInputTypes()
+Gets back the following Types
+- Choose
+- Input
+- MultiSelect
+- Select
+#### Parameters:
+- none
+#### Use:
+```
+import{getInputTypes} from "milena"
+
+let type:string[] = getInputTypes()
+```

@@ -1,15 +1,25 @@
+//Constants
+import {getInputTypes} from "./lib/functions";
+
 const ansi = require("./lib/ansi");
 const config = require("./lib/config.json");
 const func = require("./lib/functions");
 const readline = require("readline");
-
-readline.emitKeypressEvents(process.stdin);
 const stdin = process.stdin;
 
+//Exports
+export {getInputTypes} from "./lib/functions";
+
+//Emit Keypress-Events
+readline.emitKeypressEvents(process.stdin);
+
+//Class
 export class Prompt{
+    //Constructor
     constructor(){
     }
 
+    //Methods
     clear(){
         console.clear();
     }

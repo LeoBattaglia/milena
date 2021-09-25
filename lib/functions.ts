@@ -27,6 +27,10 @@ export function getChoose(str:string, charTrue:string, charFalse:string):Boolean
     }
 }
 
+export function getInputTypes():string[]{
+    return ["Choose", "Input", "MultiSelect", "Select"];
+}
+
 export function log(output:string, color:string, newLine:Boolean):void{
     process.stdout.write(color + output + config.ansi.reset);
     if(newLine){
