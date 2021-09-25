@@ -8,7 +8,7 @@ const readline = require("readline");
 const stdin = process.stdin;
 
 //Exports
-export {getInputTypes} from "./lib/functions";
+export {getInputDataTypes, getInputTypes} from "./lib/functions";
 
 //Emit Keypress-Events
 readline.emitKeypressEvents(process.stdin);

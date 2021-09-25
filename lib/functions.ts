@@ -27,6 +27,10 @@ export function getChoose(str:string, charTrue:string, charFalse:string):Boolean
     }
 }
 
+export function getInputDataTypes():string[]{
+    return ["Boolean", "Number", "String"];
+}
+
 export function getInputTypes():string[]{
     return ["Choose", "Input", "MultiSelect", "Select"];
 }

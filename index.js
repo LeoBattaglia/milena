@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Prompt = exports.getInputTypes = void 0;
+exports.Prompt = exports.getInputTypes = exports.getInputDataTypes = void 0;
 const ansi = require("./lib/ansi");
 const config = require("./lib/config.json");
 const func = require("./lib/functions");
@@ -8,6 +8,7 @@ const readline = require("readline");
 const stdin = process.stdin;
 //Exports
 var functions_1 = require("./lib/functions");
+Object.defineProperty(exports, "getInputDataTypes", { enumerable: true, get: function () { return functions_1.getInputDataTypes; } });
 Object.defineProperty(exports, "getInputTypes", { enumerable: true, get: function () { return functions_1.getInputTypes; } });
 //Emit Keypress-Events
 readline.emitKeypressEvents(process.stdin);

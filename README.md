@@ -228,6 +228,20 @@ None
 
 # Export-Methods
 
+### getInputDataTypes()
+Gets back the following Types
+- Boolean
+- Number
+- String
+#### Parameters:
+- none
+#### Use:
+```
+import{getInputDataTypes} from "milena";
+
+let types:string[] = getInputDataTypes();
+```
+
 ### getInputTypes()
 Gets back the following Types
 - Choose
@@ -238,7 +252,7 @@ Gets back the following Types
 - none
 #### Use:
 ```
-import{getInputTypes} from "milena"
+import{getInputTypes} from "milena";
 
-let type:string[] = getInputTypes()
+let types:string[] = getInputTypes();
 ```
