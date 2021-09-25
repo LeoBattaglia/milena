@@ -28,7 +28,7 @@ export function getChoose(str:string, charTrue:string, charFalse:string):Boolean
 }
 
 export function getInputDataTypes():string[]{
-    return ["Boolean", "Number", "String"];
+    return ["Array", "Boolean", "Number", "String"];
 }
 
 export function getInputTypes():string[]{

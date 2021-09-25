@@ -226,10 +226,11 @@ It is also possible, to use the methods without "await" for asynchronous and non
 ## Parameters
 None
 
-# Export-Methods
+## Export-Methods
 
 ### getInputDataTypes()
 Gets back the following Types
+- Array
 - Boolean
 - Number
 - String
