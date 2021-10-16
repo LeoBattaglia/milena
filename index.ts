@@ -75,8 +75,8 @@ export class Prompt{
         let result = await inputStream;
         let input:string = result.toString();
         input = func.removeTabsAndBreaks(input);
-        input.trim();
-        //input = input.length > 1 ? input.trim() : input;
+        //input.trim();
+        input = input.length > 1 ? input.trim() : input;
         ansi.up(1);
         ansi.right(output.length + 1)
         func.log(input, config.colors.selected, false);
