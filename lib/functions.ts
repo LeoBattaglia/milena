@@ -27,8 +27,12 @@ export function getChoose(str:string, charTrue:string, charFalse:string):Boolean
     }
 }
 
-export function getInputDataTypes():string[]{
-    return ["Array", "Boolean", "Number", "String"];
+export function getInputDataTypes(withoutArray?:Boolean):string[]{
+    if(withoutArray === true){
+        return ["Boolean", "Number", "String"];
+    }else{
+        return ["Array", "Boolean", "Number", "String"];
+    }
 }
 
 export function getInputTypes():string[]{
